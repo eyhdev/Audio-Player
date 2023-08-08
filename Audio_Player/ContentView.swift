@@ -2,15 +2,13 @@
 //  ContentView.swift
 //  Audio_Player
 //
-//  Created by ayhan on 24.03.2022.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Home()
     }
 }
 

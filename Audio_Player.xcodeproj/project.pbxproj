@@ -11,6 +11,10 @@
 		CF1D892D27EC793800692EA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D892C27EC793800692EA9 /* ContentView.swift */; };
 		CF1D892F27EC793900692EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1D892E27EC793900692EA9 /* Assets.xcassets */; };
 		CF1D893227EC793900692EA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1D893127EC793900692EA9 /* Preview Assets.xcassets */; };
+		CF1D893D27EC797400692EA9 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D893C27EC797400692EA9 /* Album.swift */; };
+		CF1D894027EC798700692EA9 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D893F27EC798700692EA9 /* Home.swift */; };
+		CF38EC48285B84DD00562EA6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF38EC47285B84DD00562EA6 /* HomeViewModel.swift */; };
+		CFAE8DC6298145B200F4D8BC /* Audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFAE8DC5298145B200F4D8BC /* Audio.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		CF1D892C27EC793800692EA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CF1D892E27EC793900692EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF1D893127EC793900692EA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF1D893C27EC797400692EA9 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		CF1D893F27EC798700692EA9 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		CF38EC47285B84DD00562EA6 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CFAE8DC5298145B200F4D8BC /* Audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Audio.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,10 @@
 		CF1D892927EC793700692EA9 /* Audio_Player */ = {
 			isa = PBXGroup;
 			children = (
+				CFAE8DC5298145B200F4D8BC /* Audio.mp3 */,
+				CF1D893B27EC796600692EA9 /* Model */,
+				CF1D893E27EC797C00692EA9 /* View */,
+				CF1D893827EC795100692EA9 /* ViewModel */,
 				CF1D892A27EC793800692EA9 /* Audio_PlayerApp.swift */,
 				CF1D892C27EC793800692EA9 /* ContentView.swift */,
 				CF1D892E27EC793900692EA9 /* Assets.xcassets */,
@@ -65,6 +77,30 @@
 				CF1D893127EC793900692EA9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF1D893827EC795100692EA9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF38EC47285B84DD00562EA6 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF1D893B27EC796600692EA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF1D893C27EC797400692EA9 /* Album.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF1D893E27EC797C00692EA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF1D893F27EC798700692EA9 /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +163,7 @@
 			files = (
 				CF1D893227EC793900692EA9 /* Preview Assets.xcassets in Resources */,
 				CF1D892F27EC793900692EA9 /* Assets.xcassets in Resources */,
+				CFAE8DC6298145B200F4D8BC /* Audio.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF1D892D27EC793800692EA9 /* ContentView.swift in Sources */,
+				CF1D894027EC798700692EA9 /* Home.swift in Sources */,
+				CF38EC48285B84DD00562EA6 /* HomeViewModel.swift in Sources */,
 				CF1D892B27EC793800692EA9 /* Audio_PlayerApp.swift in Sources */,
+				CF1D893D27EC797400692EA9 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Audio_Player/Preview Content\"";
-				DEVELOPMENT_TEAM = B34TL6M52N;
+				DEVELOPMENT_TEAM = LPY59J6YN4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -275,12 +315,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Ayhan-Jibrael.Audio-Player";
+				PRODUCT_BUNDLE_IDENTIFIER = "Audio-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -296,7 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Audio_Player/Preview Content\"";
-				DEVELOPMENT_TEAM = B34TL6M52N;
+				DEVELOPMENT_TEAM = LPY59J6YN4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -304,12 +345,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Ayhan-Jibrael.Audio-Player";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Audio-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
